@@ -1,0 +1,5 @@
+{
+  "failures": [
+    "G1 judge found an unsupported statement: \"These are left blank on purpose and listed as open questions for the RTE; they are not guessed.\" (No input, the brief, the trigger or shared memory names an RTE (Release Train Engineer) role or anyone who owns the calendar. Naming that addressee is an invent)"
+  ]
+}
