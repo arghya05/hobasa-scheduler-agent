@@ -1,4 +1,4 @@
-<!-- input org.calendar_rules for SCH-P01: from hobasa-agentic-sdlc/org/org.calendar_rules.md at commit 9690c9b, produced by source -->
+<!-- input org.calendar_rules for SCH-P01: from hobasa-agentic-sdlc/org/org.calendar_rules.md at commit 2038404, produced by source -->
 # org.calendar_rules
 
 Source: hobasa-agentic-sdlc/org/org.calendar_rules.md (input at commit 9690c9b). Iteration: ITER-2026-10 (trigger date 2026-10-25).
@@ -22,6 +22,6 @@ Source: hobasa-agentic-sdlc/org/org.calendar_rules.md (input at commit 9690c9b).
 ## Release train dates
 - Not recorded: release train dates are not in the source. Left blank, not guessed.
 
-## Open items for the RTE (gate)
+## Open items for the approver
 - Provide the ITER-2026-10 iteration start and end dates and the release train dates.
 - Confirm the holiday list (source says none in the window) and that the PROD window falls on a working day.

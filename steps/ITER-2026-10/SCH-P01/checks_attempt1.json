@@ -1,5 +1,3 @@
 {
-  "failures": [
-    "G1 judge found an unsupported statement: \"## Open items for the RTE (gate)\" (Neither the input file, the brief, the trigger nor the shared memory names an RTE or says the RTE owns this gate. The role is assumed. It is a minor point becau)"
-  ]
+  "failures": []
 }

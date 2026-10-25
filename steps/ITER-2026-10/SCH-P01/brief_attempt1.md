@@ -3,9 +3,11 @@
 - Workbook trigger: Start of each release train; change to holidays or the PROD window
 - Workbook action: Record iteration dates, release train dates, the PROD window (11 am–12 pm, day after system demo), timezone and holidays
 - Workbook outcome: Approved calendar rules
+- Owner of this step: SM
+- Gate (who approves this output): RTE
 
 ## Inputs (GitHub checkout; read them with Read, or context_get for a receipt)
-- org.calendar_rules (Iterations, release train, PROD window, timezone, holidays): `hobasa-scheduler-agent/inputs/ITER-2026-10/SCH-P01/org.calendar_rules.md` (from hobasa-agentic-sdlc/org/org.calendar_rules.md at commit 9690c9b)
+- org.calendar_rules (Iterations, release train, PROD window, timezone, holidays): `hobasa-scheduler-agent/inputs/ITER-2026-10/SCH-P01/org.calendar_rules.md` (from hobasa-agentic-sdlc/org/org.calendar_rules.md at commit 2038404)
 
 ## Outputs (write each file in full; the spine commits and pushes after evaluation and approval)
 - org.calendar_rules (Iterations, release train, PROD window, timezone, holidays): write `hobasa-agentic-sdlc/org/org.calendar_rules.md`

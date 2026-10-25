@@ -9,7 +9,7 @@
 
 | Item | Prepared input (this repository) | Read from (producer in GitHub) | Commit | Produced by |
 |---|---|---|---|---|
-| org.calendar_rules | hobasa-scheduler-agent/inputs/ITER-2026-10/SCH-P01/org.calendar_rules.md | hobasa-agentic-sdlc/org/org.calendar_rules.md | 9690c9b | source |
+| org.calendar_rules | hobasa-scheduler-agent/inputs/ITER-2026-10/SCH-P01/org.calendar_rules.md | hobasa-agentic-sdlc/org/org.calendar_rules.md | 2038404 | source |
 
 Full brief per attempt: `brief_attempt<N>.md` (trigger event, owner answers, tool view, refusal reasons).
 
@@ -21,8 +21,8 @@ Full brief per attempt: `brief_attempt<N>.md` (trigger event, owner answers, too
 
 ## How the agent worked
 
-- Approach: I rewrote the output so it doesn't name an owner for the gate, since no input names one. The heading is now "Open items for the approver". The facts are unchanged and come only from the input. The missing iteration and release train dates are still marked "not recorded", not guessed.
-- Tools used: Read, Skill, Write
+- Approach: Read the single input and the scheduler-steps skill. The input already held the system demo, PROD window, timezone and holidays, so I kept those unchanged. I searched the repository for iteration and release train dates and found none, so those sections stay "not recorded" and are not guessed. I used no connector. A shell command was blocked by the G9 hook for this step, so I did not diff the input against the existing output file.
+- Tools used: Skill, Read, Grep, Write
 - Helper subagents: none
 - Connector calls: none
 
@@ -30,8 +30,7 @@ Full brief per attempt: `brief_attempt<N>.md` (trigger event, owner answers, too
 
 | Attempt | Session | Checks failed | Judge unsupported | Judge scores |
 |---|---|---|---|---|
-| 1 | new | 1 | 1 | {'correct': 5, 'complete': 3, 'grounded': 5, 'useful': 3} |
-| 2 | resumed | 0 | 0 | {'correct': 5, 'complete': 3, 'grounded': 5, 'useful': 3} |
+| 1 | new | 0 | 0 | {'correct': 5, 'complete': 3, 'grounded': 5, 'useful': 3} |
 
 Details: `result_attempt<N>.json` (claims with sources), `checks_attempt<N>.json`, `judge_attempt<N>.json`.
 
