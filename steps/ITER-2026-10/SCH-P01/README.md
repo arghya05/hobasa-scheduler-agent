@@ -9,7 +9,7 @@
 
 | Item | Prepared input (this repository) | Read from (producer in GitHub) | Commit | Produced by |
 |---|---|---|---|---|
-| org.calendar_rules | hobasa-scheduler-agent/inputs/ITER-2026-10/SCH-P01/org.calendar_rules.md | hobasa-agentic-sdlc/org/org.calendar_rules.md | 9404ef3 | source |
+| org.calendar_rules | hobasa-scheduler-agent/inputs/ITER-2026-10/SCH-P01/org.calendar_rules.md | hobasa-agentic-sdlc/org/org.calendar_rules.md | 9690c9b | source |
 
 Full brief per attempt: `brief_attempt<N>.md` (trigger event, owner answers, tool view, refusal reasons).
 
@@ -21,7 +21,7 @@ Full brief per attempt: `brief_attempt<N>.md` (trigger event, owner answers, too
 
 ## How the agent worked
 
-- Approach: The only input is a one-paragraph calendar rules file. I restated its facts in a structured layout and did not invent the iteration or release train dates it lacks. This attempt removes the reference to a named role as the owner of the open items, because no input names one. The gaps are non-blocking open questions with no addressee. I didn't use connectors or the verifier, because the output is a few facts taken straight from the input.
+- Approach: I rewrote the output so it doesn't name an owner for the gate, since no input names one. The heading is now "Open items for the approver". The facts are unchanged and come only from the input. The missing iteration and release train dates are still marked "not recorded", not guessed.
 - Tools used: Read, Skill, Write
 - Helper subagents: none
 - Connector calls: none
@@ -30,7 +30,7 @@ Full brief per attempt: `brief_attempt<N>.md` (trigger event, owner answers, too
 
 | Attempt | Session | Checks failed | Judge unsupported | Judge scores |
 |---|---|---|---|---|
-| 1 | new | 1 | 1 | {'correct': 5, 'complete': 3, 'grounded': 4, 'useful': 4} |
+| 1 | new | 1 | 1 | {'correct': 5, 'complete': 3, 'grounded': 5, 'useful': 3} |
 | 2 | resumed | 0 | 0 | {'correct': 5, 'complete': 3, 'grounded': 5, 'useful': 3} |
 
 Details: `result_attempt<N>.json` (claims with sources), `checks_attempt<N>.json`, `judge_attempt<N>.json`.
